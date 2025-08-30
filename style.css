@@ -1,6 +1,6 @@
 :root {
   --squareSize: 40px;
-  --gridSize: 17;
+  --gridSize: 16;
 }
 
 
@@ -10,15 +10,23 @@
     width: calc(var(--squareSize)*var(--gridSize))
 }
 
+
 .grid-square {
     /* flex: 0 0 6%; */
     /* flex-grow: 1; */
     width: var(--squareSize);
     height: var(--squareSize);
-    border-style: solid;
+    /* border-style: solid;
     border-color: grey;
-    border-width: thin;
+    border-width: thin; */
+    background-color: lightgrey;
+
 }
+
+.drawn-square {
+    background-color: grey;
+}
+
 
 /* 
 body>div>div:nth-child(even) {
