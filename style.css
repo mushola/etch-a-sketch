@@ -1,0 +1,30 @@
+:root {
+  --squareSize: 40px;
+  --gridSize: 17;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(var(--squareSize)*var(--gridSize))
+}
+
+.grid-square {
+    /* flex: 0 0 6%; */
+    /* flex-grow: 1; */
+    width: var(--squareSize);
+    height: var(--squareSize);
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+}
+
+/* 
+body>div>div:nth-child(even) {
+  background: #23a;
+}
+
+body>div>div:nth-child(odd) {
+  background: #49b;
+} */
