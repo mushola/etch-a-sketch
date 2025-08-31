@@ -1,5 +1,5 @@
 :root {
-  --squareSize: 40px;
+  --squareSize: 20px;
   --gridSize: 16;
 }
 
@@ -7,9 +7,21 @@
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: calc(var(--squareSize)*var(--gridSize))
+    margin: 20px;
+    width: calc(var(--squareSize)*var(--gridSize));
+    border-style: inset;
 }
 
+#frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(214, 100, 100);
+  width: 400px;
+  border-style: outset;
+  border-radius: 20px;
+  border-width: 8px;
+}
 
 .grid-square {
     /* flex: 0 0 6%; */
@@ -24,8 +36,10 @@
 }
 
 .drawn-square {
-    background-color: grey;
+    background-color: dimgray;
 }
+
+
 
 
 /* 
