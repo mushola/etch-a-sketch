@@ -41,8 +41,15 @@ function placeGrid (size) {
 }
 
 function draw(square) {
-  // mouse drawing effect
-  square.classList.add("drawn-square");
+  // grey factor
+  let f = Math.floor(11 * Math.random() - 5);
+  if (square.classList.contains("grid-square")) {
+    square.style.backgroundColor = 'rgb(' + Array(3).fill(120 + f).join(',') + ')';
+    square.classList.remove("grid-square");
+  } else {
+    let c = square.style.backgroundColor.match(/\d+/g);
+    square.style.backgroundColor = 'rgb(' + c.map(i => i - 2 * Math.abs(f)).join(',') + ')';
+  }
 }
 
 function deleteGrid() {
