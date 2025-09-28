@@ -40,23 +40,6 @@
 }
 
 .grid-square {
-    /* width: var(--squareSize);
-    height: var(--squareSize); */
-    background-color: lightgrey;
+    background-color: rgb(211, 211, 211);
 }
 
-.drawn-square {
-    background-color: dimgray;
-}
-
-
-
-
-/* 
-body>div>div:nth-child(even) {
-  background: #23a;
-}
-
-body>div>div:nth-child(odd) {
-  background: #49b;
-} */
